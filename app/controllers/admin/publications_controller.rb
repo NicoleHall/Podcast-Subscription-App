@@ -34,7 +34,7 @@ class Admin::PublicationsController < AdminController
 
   def destroy
     @publication.destroy
-    redirect_to admin_publication_path, alert: "Successfully deleted publication."
+    redirect_to admin_publications_path, alert: "Successfully deleted publication."
   end
 
   private
