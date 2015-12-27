@@ -2,8 +2,10 @@ Rails.application.routes.draw do
 
   devise_for :users
   root to: "home#index"
-
   resources :publications, only: [:index, :show]
+  namespace :admin do
+    resources :publications
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
