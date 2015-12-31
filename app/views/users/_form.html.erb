@@ -1,7 +1,8 @@
 <div class="container">
 <h4>Begin your $9.99 a month subscription</h4>
-<form action="" method="POST" id="payment-form">
+<form action="/users/charge" method="POST" id="payment-form">
   <span class="payment-errors"></span>
+
   <div class="row">
     <div class="col-md-6">
       <label>Card Number</label>
@@ -15,7 +16,7 @@
       <input type="text" data-stripe="cvc" class="form-control" placeholder="123">
     </div>
   </div>
-  <br>
+  <br />
   <div class="row">
     <div class="col-xs-2">
       <label>Expiration</label>
